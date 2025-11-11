@@ -11,10 +11,34 @@
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
-<body>
-    <header>
-        <div class="h-72 bg-cyan">
+<body class="text-base text-gray-2">
 
+    <head class="montserrat">
+        <div class="h-72 bg-cyan flex items-center">
+            <div class="max-w-1536 flex justify-between mx-auto px-5 w-full">
+                <div class="flex items-center gap-x-3">
+                    <img src="./images/logo.svg" />
+                    <span class="font-bold text-xl text-white">Article Page</span>
+                </div>
+
+                <div class="flex">
+                    <button class="flex items-center gap-x-1 cursor-pointer px-3 py-2 text-white bg-blue rounded-full ">
+                        <iconify-icon icon="healthicons:star-medium-outline" class="text-3xl"></iconify-icon>
+                        <span>Favoris</span>
+                    </button>
+
+                    <div class=" px-5 py-2 w-full rounded-full flex items-center gap-x-3">
+                        <iconify-icon icon="ep:search" class="text-white text-lg"></iconify-icon>
+                        <input type="text" placeholder="Search"
+                            class="placeholder:text-white w-16 text-white outline-none border-none" />
+                    </div>
+
+                    <button class="flex items-center gap-x-1 cursor-pointer px-3 py-2 text-white rounded-full ">
+                        <iconify-icon icon="solar:user-outline" class="text-lg"></iconify-icon>
+                        <span>Login</span>
+                    </button>
+                </div>
+            </div>
         </div>
 
         <!-- Filter -->
@@ -52,7 +76,271 @@
                 <button>Health</button>
             </li>
         </ul>
-    </header>
+    </head>
+
+    <main class="max-w-1536 mx-auto px-5 py-10 ">
+        <!--  -->
+        <div class="text-gray-1 text-sm">
+            <a href="" class="underline">Home</a>
+            <iconify-icon icon="formkit:right" inline></iconify-icon>
+            <span>Article Page</span>
+        </div>
+
+        <div class="mt-5 w-full flex gap-x-5">
+            <!-- Container -->
+            <div class="flex-1">
+                <!-- Banner -->
+                <header class="bg-[url('./../images/banner-img.png')] bg-cover bg-top h-400 w-full relative rounded-xl">
+                    <div class="bg-linear-to-b from-[rgba(0,52,100,0)] to-[#002f64] absolute inset-0 rounded-xl"></div>
+                    <div class="absolute inset-0 z-50 flex flex-col gap-y-5 justify-end p-5  text-white">
+                        <h1 class="font-bold leading-10 text-3xl">
+                            GTA 6 : la sortie du jeu vidéo encore repoussée <br>
+                            à une nouvelle date, Rockstar "désolé"
+                        </h1>
+                        <p class="text-lg">Le nouvel opus de la très célèbre série de jeux vidéo d'action, prévue <br>
+                            initialement pour
+                            l'automne 2025 puis annoncée pour le printemps, est repoussée et attendue en novembre 2026.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="flex gap-x-3 items-center">
+                                <iconify-icon icon="solar:calendar-outline"></iconify-icon>
+                                <span>Nov 29, 2024</span>
+                            </span>
+
+                            <div class="flex gap-x-3">
+                                <img src="./images/forbes-img.png" alt="Forbes img" class="h-full" />
+                                <div class="flex flex-col">
+                                    <span>AL.Com</span>
+                                    <span class="font-normal opacity-50">Source</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Post section -->
+                <section class="mt-10 flex flex-col gap-y-5">
+                    <div class="flex items-center gap-x-5">
+                        <h2 class="text-gray-2 font-bold text-3xl">Popular Post </h2>
+                        <div class="w-8 h-3 bg-cyan"></div>
+                    </div>
+                    <p>Ideas, trends, and inspiration for a brighter future</p>
+                    <div
+                        class="bg-back w-728 h-90 border border-dashed rounded-sm mx-auto border-[#000]/15  flex items-center justify-center">
+                        728 x 90
+                    </div>
+
+                    <div class="grid grid-cols-2 grid-rows-2 gap-3">
+                        <article class="row-span-2 flex flex-col gap-y-3 montserrat">
+                            <img src="./images/post-1.png" alt="sustainable"
+                                class="rounded-xl max-h-340 object-cover w-full">
+                            <h3 class="font-bold text-xl">Sustainable Travel Tips: Reducing Your Carbon
+                                Footprint</h3>
+                            <p class="text-sm">Les atrocités commises par les paramilitaires dans la ville d'El-Facher
+                                pourraient
+                                constituer des crimes de guerre et contre l'humanité,</p>
+                            <span class="flex gap-x-3 items-center text-gray-3">
+                                <iconify-icon icon="solar:calendar-outline"></iconify-icon>
+                                <span>Nov 29, 2024</span>
+                            </span>
+                        </article>
+                        <article class="grid grid-cols-2 items-center gap-x-3 relative ">
+                            <div class="bg-[url('./../images/post-2.png')] bg-cover bg-center h-full w-full rounded-xl">
+                            </div>
+                            <div class="montserrat flex flex-col gap-y-5">
+                                <h3 class="font-bold text-xl">Chasing Sunsets: The World's Most Scenic Destinations</h3>
+                                <p class="text-sm">Les atrocités commises par les paramilitaires dans la ville
+                                    d'El-Facher
+                                    pourraient
+                                    constituer des crimes de guerre et contre l'humanité,</p>
+                                <span class="flex gap-x-3 items-center text-gray-3">
+                                    <iconify-icon icon="solar:calendar-outline"></iconify-icon>
+                                    <span>Nov 29, 2024</span>
+                                </span>
+                            </div>
+                        </article>
+                        <article class="grid grid-cols-2 items-center gap-x-3">
+                            <div class="bg-[url('./../images/post-3.png')] bg-cover bg-center h-full w-full rounded-xl">
+                            </div>
+                            <div class="montserrat flex flex-col gap-y-5">
+                                <h3 class="font-bold text-xl">Chasing Sunsets: The World's Most Scenic Destinations</h3>
+                                <p class="text-sm">Les atrocités commises par les paramilitaires dans la ville
+                                    d'El-Facher
+                                    pourraient
+                                    constituer des crimes de guerre et contre l'humanité,</p>
+                                <span class="flex gap-x-3 items-center text-gray-3">
+                                    <iconify-icon icon="solar:calendar-outline"></iconify-icon>
+                                    <span>Nov 29, 2024</span>
+                                </span>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- Trending section -->
+                <section class="mt-10 flex flex-col gap-y-5">
+                    <div class="flex items-center gap-x-5">
+                        <h2 class="text-gray-2 font-bold text-3xl">Trending Post </h2>
+                        <div class="w-8 h-3 bg-cyan"></div>
+                    </div>
+                    <p>Discover how innovation and creativity drive meaningful change</p>
+
+                    <div class="grid grid-cols-3 gap-5">
+                        <article class="row-span-2 flex flex-col gap-y-3 montserrat">
+                            <img src="./images/post-1.png" alt="sustainable"
+                                class="rounded-xl max-h-340 object-cover w-full">
+                            <h3 class="font-bold text-xl">Sustainable Travel Tips: Reducing Your Carbon
+                                Footprint</h3>
+                            <span class="flex gap-x-3 items-center text-gray-3">
+                                <iconify-icon icon="solar:calendar-outline"></iconify-icon>
+                                <span>Nov 29, 2024</span>
+                            </span>
+                        </article>
+
+                        <article class="row-span-2 flex flex-col gap-y-3 montserrat">
+                            <img src="./images/post-1.png" alt="sustainable"
+                                class="rounded-xl max-h-340 object-cover w-full">
+                            <h3 class="font-bold text-xl">Sustainable Travel Tips: Reducing Your Carbon
+                                Footprint</h3>
+                            <span class="flex gap-x-3 items-center text-gray-3">
+                                <iconify-icon icon="solar:calendar-outline"></iconify-icon>
+                                <span>Nov 29, 2024</span>
+                            </span>
+                        </article>
+
+                        <article class="row-span-2 flex flex-col gap-y-3 montserrat">
+                            <img src="./images/post-1.png" alt="sustainable"
+                                class="rounded-xl max-h-340 object-cover w-full">
+                            <h3 class="font-bold text-xl">Sustainable Travel Tips: Reducing Your Carbon
+                                Footprint</h3>
+                            <span class="flex gap-x-3 items-center text-gray-3">
+                                <iconify-icon icon="solar:calendar-outline"></iconify-icon>
+                                <span>Nov 29, 2024</span>
+                            </span>
+                        </article>
+
+                        <article class="row-span-2 flex flex-col gap-y-3 montserrat">
+                            <img src="./images/post-1.png" alt="sustainable"
+                                class="rounded-xl max-h-340 object-cover w-full">
+                            <h3 class="font-bold text-xl">Sustainable Travel Tips: Reducing Your Carbon
+                                Footprint</h3>
+                            <span class="flex gap-x-3 items-center text-gray-3">
+                                <iconify-icon icon="solar:calendar-outline"></iconify-icon>
+                                <span>Nov 29, 2024</span>
+                            </span>
+                        </article>
+
+                        <article class="row-span-2 flex flex-col gap-y-3 montserrat">
+                            <img src="./images/post-1.png" alt="sustainable"
+                                class="rounded-xl max-h-340 object-cover w-full">
+                            <h3 class="font-bold text-xl">Sustainable Travel Tips: Reducing Your Carbon
+                                Footprint</h3>
+                            <span class="flex gap-x-3 items-center text-gray-3">
+                                <iconify-icon icon="solar:calendar-outline"></iconify-icon>
+                                <span>Nov 29, 2024</span>
+                            </span>
+                        </article>
+
+                        <article class="row-span-2 flex flex-col gap-y-3 montserrat">
+                            <img src="./images/post-1.png" alt="sustainable"
+                                class="rounded-xl max-h-340 object-cover w-full">
+                            <h3 class="font-bold text-xl">Sustainable Travel Tips: Reducing Your Carbon
+                                Footprint</h3>
+                            <span class="flex gap-x-3 items-center text-gray-3">
+                                <iconify-icon icon="solar:calendar-outline"></iconify-icon>
+                                <span>Nov 29, 2024</span>
+                            </span>
+                        </article>
+
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="flex items-center justify-center space-x-2 mt-5">
+                        <button
+                            class="h-12 w-12 flex justify-center items-center rounded-xl bg-cyan text-white/75">1</button>
+                        <button
+                            class="h-12 w-12 flex justify-center items-center rounded-sm text-black bg-white">2</button>
+                        <button class="h-12 w-12 flex justify-center items-center text-black bg-white">3</button>
+                    </div>
+
+                    <div
+                        class="bg-back w-728 h-90 border border-dashed rounded-sm mx-auto border-[#000]/15  flex items-center justify-center">
+                        728 x 90
+                    </div>
+                </section>
+
+
+            </div>
+
+            <!-- Ads -->
+            <aside class="flex flex-col gap-y-3">
+                <!-- Ads-1 -->
+                <div class="w-300 h-600 bg-back rounded-md p-5">
+                    <span class="text-gray-2 font-medium text-lg">Annonces</span>
+                    <div class="h-full flex justify-center items-center text-black text-base">
+                        300 x 600
+                    </div>
+                </div>
+                <!-- Ads-2 -->
+                <div class="w-300 h-600 bg-back rounded-md p-5">
+                    <span class="text-gray-2 font-medium text-lg">Annonces</span>
+                    <div class="h-full flex justify-center items-center text-black text-base">
+                        300 x 600
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="max-w-1536 mx-auto px-5 py-10 montserrat">
+        <div class="flex justify-between items-center">
+            <!-- Logo -->
+            <div>
+                <div class="flex items-center gap-x-3">
+                    <img src="./images/logo.svg" />
+                    <span class="font-bold text-xl">Article Page</span>
+                </div>
+
+                <div class="mt-3 text-2xl flex gap-x-3 items-center">
+                    <iconify-icon icon="basil:instagram-outline"></iconify-icon>
+                    <iconify-icon icon="arcticons:x-twitter"></iconify-icon>
+                    <iconify-icon icon="basil:linkedin-outline"></iconify-icon>
+                    <iconify-icon icon="basil:facebook-outline"></iconify-icon>
+                    <iconify-icon icon="basil:youtube-outline"></iconify-icon>
+                </div>
+            </div>
+
+            <!-- Informations -->
+            <div class="flex gap-x-20">
+                <!-- Address -->
+                <div>
+                    <h4 class="font-semibold text-sm">Address</h4>
+                    <p>Level 1, 12 Sample St, Sydney NSW 2000</p>
+                </div>
+                <!-- Phone -->
+                <div>
+                    <h4 class="font-semibold text-sm">Phone Number</h4>
+                    <p>1800 123 4567</p>
+                </div>
+                <!-- Email -->
+                <div>
+                    <h4 class="font-semibold text-sm">Email</h4>
+                    <p>blog@template.io</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-between text-sm mt-5">
+            <span class="font-medium">© 2025 Blog Template. All rights reserved.</span>
+
+            <div class="flex gap-x-5">
+                <a href="">Privacy Policy</a>
+                <a href="">Terms of Service</a>
+                <a href="">Cookies Settings</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
