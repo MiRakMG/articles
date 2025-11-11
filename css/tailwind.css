@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  /* Color */
+  --color-cyan: #fb3640;
+
+  /* Spacing */
+  --spacing-72: 72px;
+}
