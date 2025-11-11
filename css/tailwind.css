@@ -6,6 +6,7 @@
   --color-gray-1: #8b8b8b;
   --color-gray-2: #212121;
   --color-gray-3: #9a9a9a;
+  --color-gray-4: #757575;
   --color-back: #f4f4f4;
   --color-black: #101010;
   --color-blue: #0a2463;
@@ -16,7 +17,11 @@
   --spacing-300: 300px;
   --spacing-340: 340px;
   --spacing-400: 400px;
+  --spacing-480: 480px;
   --spacing-600: 600px;
   --spacing-728: 728px;
   --spacing-1536: 1536px;
+
+  /* Breakpoints */
+  --breakpoint-xs: 450px;
 }
